@@ -26,7 +26,7 @@ Desenvolvido por: <br>
 <br>
      ``npm install``
     <br> 
-     ``protractor --version``
+     ``./node_modules/.bin/protractor --version``
     <br>
 Se tudo estiver ok aparecerá a versão do protractor.
 > 7.0.0 
@@ -35,7 +35,7 @@ Se tudo estiver ok aparecerá a versão do protractor.
 #
 ## Executando Testes <a name="executando-testes"></a>
 Entre no diretorio principal do projeto clonado e execute o comando para rodar o teste exemplo:
->protractor ./conf/conf.js
+>./node_modules/.bin/protractor conf/conf.js
 
 #
 ## Dicas no VS Code:
