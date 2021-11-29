@@ -1,10 +1,4 @@
 {
-  "dependencies": {
-    "protractor": "^7.0.0"
-  },
-  "devDependencies": {
-    "jasmine": "^3.10.0"
-  },
   "name": "trabalho-protractor",
   "description": "Projeto da disciplina de S206-Qualidade-de-Software Inatel. Estudo do Framework Protractor. <br> Desenvolvido por: <br> • <a href=\"https://github.com/Uttoni\">Utonni Brandani</a> <br> • <a href=\"https://github.com/Redfox0012\">Gabriel Henrique da Silva</a> <br> • <a href=\"\">Arilson Xavier</a> <br> • <a href=\"\">João Carlos</a>",
   "version": "1.0.0",
@@ -24,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/Redfox0012/trabalho-protractor/issues"
   },
-  "homepage": "https://github.com/Redfox0012/trabalho-protractor#readme"
+  "homepage": "https://github.com/Redfox0012/trabalho-protractor#readme",
+
+  "dependencies": {
+    "protractor": "^7.0.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.10.0"
+  }
 }
