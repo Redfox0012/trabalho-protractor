@@ -36,3 +36,8 @@ Se tudo estiver ok aparecerá a versão do protractor.
 ## Executando Testes <a name="executando-testes"></a>
 Entre no diretorio principal do projeto clonado e execute o comando para rodar o teste exemplo:
 >protractor ./conf/conf.js
+
+#
+## Dicas no VS Code:
+1. Extensões:<br>
+    • JavaScript and TypeScript Nightly (Microsoft)
