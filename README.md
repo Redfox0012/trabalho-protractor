@@ -23,13 +23,17 @@ Desenvolvido por: <br>
 #
 ## Instalação das dependencias <a name="dependencias"></a>
 1. Rode o comando abaixo dentro da raiz para instalar as dependencias do projeto: 
+> npm install
+
+> ./node_modules/.bin/protractor --version
 <br>
-     ``npm install``
-    <br> 
-     ``./node_modules/.bin/protractor --version``
-    <br>
+
 Se tudo estiver ok aparecerá a versão do protractor.
+
 > 7.0.0 
+
+2. Execute o comando para atualizar o webdriver-manager:
+> npm run update
 
 • referencias https://www.protractortest.org/#/
 #
