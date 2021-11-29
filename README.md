@@ -24,8 +24,10 @@ Desenvolvido por: <br>
 ## Instalação das dependencias <a name="dependencias"></a>
 1. Rode o comando abaixo dentro da raiz para instalar as dependencias do projeto: 
 <br>
-    • ``npm install`` (tirar talvez pois é necerrario apenas uma vez)<br> 
-    • ``protractor --version``<br>
+     ``npm install``
+    <br> 
+     ``protractor --version``
+    <br>
 Se tudo estiver ok aparecerá a versão do protractor.
 > 7.0.0 
 
