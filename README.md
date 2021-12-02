@@ -41,7 +41,16 @@ Se tudo estiver ok aparecerá a versão do protractor.
 Entre no diretorio principal do projeto clonado e execute o comando para rodar o teste exemplo:
 >./node_modules/.bin/protractor conf/conf.js
 
+Teste do site globalsqa:
+
+> ./node_modules/.bin/protractor conf/globalsqa_conf.js
+
 #
 ## Dicas no VS Code:
 1. Extensões:<br>
     • JavaScript and TypeScript Nightly (Microsoft)
+
+#
+## Dicas no Navegador Chrome:
+1. Extensões:<br>
+    • POM Builder: para ajudar na seleção dos objetos no navegador.

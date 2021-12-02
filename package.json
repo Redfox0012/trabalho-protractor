@@ -28,7 +28,6 @@
     "jasmine": "^3.10.0"
   },
   "keywords": [
-    "protractor",
-    "letcode"
+    "protractor"
   ]
 }
