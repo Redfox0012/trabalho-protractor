@@ -1,9 +1,7 @@
-// Comando para executar aplicações não Angular
-// browser.ignoreSynchronization = true;
-// browser.sleep(1000); // Comando para 
+// browser.ignoreSynchronization = true; // Comando para executar aplicações não Angular
+// browser.sleep(1000); // Comando para fazer o teste esperar em mili segundos
+
 const { browser, element, $ } = require("protractor");
-const { DriverProvider } = require("protractor/built/driverProviders");
-const { Alert } = require("selenium-webdriver");
 
 describe('BankingProject', function() {
     beforeEach(function() {
@@ -26,17 +24,12 @@ describe('BankingProject', function() {
     it('Criando um usuario', function() {
         element(by.css("[ng-click='manager()']")).click();
         element(by.css("[ng-class='btnClass1']")).click();
-        browser.sleep(1000);
         element(by.model("fName")).sendKeys('fNameTest');
-        browser.sleep(2000);
         element(by.model("lName")).sendKeys('lNameTest');
-        browser.sleep(2000);
         element(by.model("postCd")).sendKeys('377777');
-        browser.sleep(2000);
         element(by.css(".btn-default")).click();
         let text = browser.driver.switchTo().alert().getText();
         expect(text).toContain('Customer added successfully with customer id :');
         browser.driver.switchTo().alert().accept();
-        browser.sleep(4000);
     }); 
 })

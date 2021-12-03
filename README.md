@@ -36,6 +36,7 @@ Se tudo estiver ok aparecerá a versão do protractor.
 > npm run update
 
 • referencias https://www.protractortest.org/#/
+
 #
 ## Executando Testes <a name="executando-testes"></a>
 Entre no diretorio principal do projeto clonado e execute o comando para rodar o teste exemplo:
@@ -44,6 +45,11 @@ Entre no diretorio principal do projeto clonado e execute o comando para rodar o
 Teste do site globalsqa:
 
 > ./node_modules/.bin/protractor conf/globalsqa_conf.js
+
+#
+## Relatorio de testes <a name="executando-testes"></a>
+
+> ./node_modules/.bin/allure serve allure-results/
 
 #
 ## Dicas no VS Code:

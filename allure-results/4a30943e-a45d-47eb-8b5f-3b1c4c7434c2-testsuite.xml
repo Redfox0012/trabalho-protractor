@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1638556174732' stop='1638556181457'>
+    <name>BankingProject</name>
+    <title>BankingProject</title>
+    <test-cases>
+        <test-case start='1638556174732' status='passed' stop='1638556179250'>
+            <name>Acessando a url https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login com sucesso</name>
+            <title>Acessando a url https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login com sucesso</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1638556179250' status='passed' stop='1638556180371'>
+            <name>Acessado a conta de um usuario já cadastrado (Harry Potter)</name>
+            <title>Acessado a conta de um usuario já cadastrado (Harry Potter)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1638556180371' status='passed' stop='1638556181457'>
+            <name>Criando um usuario</name>
+            <title>Criando um usuario</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
