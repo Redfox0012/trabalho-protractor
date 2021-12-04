@@ -4,8 +4,14 @@ exports.config = {
   
     // Capabilities to be passed to the webdriver instance.
     capabilities: {
-      'browserName': 'chrome'
+      'browserName': 'chrome',
+      //headless
+      //'chromeOptions': { 
+      //  'args': [ '-headless' ] 
+      //},
     },
+
+    
   
     // Framework to use. Jasmine is recommended.
     framework: 'jasmine',
