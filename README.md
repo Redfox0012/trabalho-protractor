@@ -14,6 +14,9 @@ Desenvolvido por: <br>
 * [Requisitos do ambiente de desenvolvimento](#requisitos)
 * [Instalação das dependencias](#dependencias)
 * [Executando Testes](#executando-testes)
+* [Relatorio de testes](#relatorio)
+* [Dicas no VS Code](#vscode)
+* [Dicas no Navegador Chrome:](#chrome)
 
 #
 ## Requisitos do ambiente de desenvolvimento  <a name="requisitos"></a>
@@ -48,17 +51,17 @@ Teste do site globalsqa:
 > ./node_modules/.bin/protractor conf/globalsqa_conf.js
 
 #
-## Relatorio de testes <a name="executando-testes"></a>
+## Relatorio de testes <a name="relatorio"></a>
 Comando para gerar o relatorio de teste:
 
 > ./node_modules/.bin/allure serve allure-results/
 
 #
-## Dicas no VS Code:
+## Dicas no VS Code:<a name="vscode"></a>
 1. Extensões:<br>
     • JavaScript and TypeScript Nightly (Microsoft)
 
 #
-## Dicas no Navegador Chrome:
+## Dicas no Navegador Chrome:<a name="chrome"></a>
 1. Extensões:<br>
     • POM Builder: para ajudar na seleção dos objetos no navegador.
