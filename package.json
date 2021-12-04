@@ -20,6 +20,7 @@
     "url": "https://github.com/Redfox0012/trabalho-protractor/issues"
   },
   "homepage": "https://github.com/Redfox0012/trabalho-protractor#readme",
+  
   "dependencies": {
     "allure-commandline": "^2.13.8",
     "jasmine-allure-reporter": "^1.0.2",

@@ -19,6 +19,7 @@ Desenvolvido por: <br>
 ## Requisitos do ambiente de desenvolvimento  <a name="requisitos"></a>
 
 1. nodejs(node):  https://nodejs.org/en/
+2. java >= 8
 
 #
 ## Instalação das dependencias <a name="dependencias"></a>
@@ -48,6 +49,7 @@ Teste do site globalsqa:
 
 #
 ## Relatorio de testes <a name="executando-testes"></a>
+Comando para gerar o relatorio de teste:
 
 > ./node_modules/.bin/allure serve allure-results/
 

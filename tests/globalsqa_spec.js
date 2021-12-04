@@ -2,6 +2,7 @@
 // browser.sleep(1000); // Comando para fazer o teste esperar em mili segundos
 
 const { browser, element, $ } = require("protractor");
+const { createRandomUser } = require("../helpers/globalsqa_helper");
 
 describe('BankingProject', function() {
     beforeEach(function() {
@@ -13,7 +14,7 @@ describe('BankingProject', function() {
         expect(title.getText()).toEqual('XYZ Bank');
     });
 
-    it('Acessado a conta de um usuario já cadastrado (Harry Potter)', function() {
+    it('Acessado um usuario já cadastrado (Harry Potter)', function() {
         element(by.css("[ng-click='customer()']")).click();
         element(by.cssContainingText("[ng-model='custId'] option", 'Harry Potter')).click();
         element(by.css('.btn-default')).click();
@@ -28,8 +29,22 @@ describe('BankingProject', function() {
         element(by.model("lName")).sendKeys('lNameTest');
         element(by.model("postCd")).sendKeys('377777');
         element(by.css(".btn-default")).click();
-        let text = browser.driver.switchTo().alert().getText();
+        let text = browser.driver.switchTo().alert().getText(); // promise
         expect(text).toContain('Customer added successfully with customer id :');
         browser.driver.switchTo().alert().accept();
-    }); 
+    });
+
+    it('Criando uma conta (dollar) para um usuario existente', function() {
+        let user = createRandomUser();
+        element(by.css("[ng-click='manager()']")).click();
+        element(by.css("[ng-class='btnClass2']")).click();
+        element(by.cssContainingText("[ng-model='custId'] [ng-repeat='cust in Customers']", user[0])).click();
+        element(by.css("[ng-model='currency'] [value='Dollar']")).click();
+        browser.sleep(1000);
+        element(by.css("[type='submit']")).click();
+        let text = browser.driver.switchTo().alert().getText();
+        expect(text).toContain('Account created successfully with account Number :');
+        browser.driver.switchTo().alert().accept();
+        browser.sleep(1000);
+    });
 })
