@@ -1,5 +1,7 @@
-// browser.ignoreSynchronization = true; // Comando para executar aplicações não Angular
-// browser.sleep(1000); // Comando para fazer o teste esperar em mili segundos
+/*
+ * browser.ignoreSynchronization = true; // Comando para executar aplicações não Angular
+ * browser.sleep(1000); // Comando para fazer o teste esperar em mili segundos
+ */
 
 const { browser, element, $ } = require("protractor");
 const { createRandomUser } = require("../helpers/globalsqa_helper");
