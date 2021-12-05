@@ -11,8 +11,6 @@ exports.config = {
       //},
     },
 
-    
-  
     // Framework to use. Jasmine is recommended.
     framework: 'jasmine',
   

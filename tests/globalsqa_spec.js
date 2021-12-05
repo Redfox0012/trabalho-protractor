@@ -34,17 +34,15 @@ describe('BankingProject', function() {
         browser.driver.switchTo().alert().accept();
     });
 
-    it('Criando uma conta (dollar) para um usuario existente', function() {
+    it('Criando uma conta para um usuario já existente', function(){
         let user = createRandomUser();
         element(by.css("[ng-click='manager()']")).click();
         element(by.css("[ng-class='btnClass2']")).click();
         element(by.cssContainingText("[ng-model='custId'] [ng-repeat='cust in Customers']", user[0])).click();
         element(by.css("[ng-model='currency'] [value='Dollar']")).click();
-        browser.sleep(1000);
         element(by.css("[type='submit']")).click();
         let text = browser.driver.switchTo().alert().getText();
         expect(text).toContain('Account created successfully with account Number :');
         browser.driver.switchTo().alert().accept();
-        browser.sleep(1000);
     });
 })
